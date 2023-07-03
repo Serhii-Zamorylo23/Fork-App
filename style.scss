@@ -1,10 +1,140 @@
+@mixin Lato($weight,$size){
+    font-family: 'Lato', sans-serif;
+    font-weight: $weight;
+    font-size: $size;
+}
+@mixin Monserrat($weidth,$size){
+    font-family: 'Montserrat', sans-serif;
+    font-size: $size;
+    font-weight: $weidth;
+}
 .header{
     height: 863px;
     background: url(/img/img\ 1.png);
+    background-size: cover;
     background-repeat: no-repeat;
     flex-grow: 1;
     &_nav{
         width: 1200px;
+        height: 100px;
         background: darkgreen;
+        display: flex;
+        margin:  0 auto;
+        align-items: center;
+        justify-content: space-between;
+        &_logo{
+            display: flex;
+            align-items: center;
+            column-gap: 17px;
+            width: 164px;
+            height: 41px;
+            &_svg{
+                width: 43px;
+                height: 41px;
+            }
+            &_title{
+                @include Lato(700,24px);
+                color: #8D81AC;
+            }
+        }
+        &_linkAndBtn{
+            display: flex;
+            align-items: center;
+            column-gap: 48px;
+            width: 710px;
+            height: 38px;
+            background: rgb(49, 22, 200);
+            &_link-cont{
+                display: flex;
+                justify-content: space-between;
+                width: 527px;
+                height: 20px;
+                background: red;
+                &_link{
+                    text-decoration: none;
+                    @include Monserrat(700,16px);
+                    color: rgba(141, 129, 172, 1);
+                }
+            }
+            &_btn{
+                width: 145px;
+                height: 37px;
+                cursor: pointer;
+                border-radius: 40px;
+                background: #8D81AC;
+                border: none;
+                @include Monserrat(700,16px);
+                color: white;
+            }
+        }
+    }
+    &_title{
+    @include Monserrat(700,82px);
+    color: white;
+    text-align: center;
+    margin-top: 83px;
+    }
+    &_sub-title{
+        @include Lato(400,38px);
+        color: rgba(141, 129, 172, 1);
+        text-align: center;
+        margin-top: 19px;
+    }
+    &_sub-title2{
+        @include Lato(400,16px);
+        color: rgba(141, 129, 172, 1);
+        text-align: center;
+        margin-top: 19px;
+        color: rgba(132, 142, 151, 1);
+    }
+    &_btn-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 19px;
+        width: 393px;
+        height: 104px;
+        background: gold;
+        position: absolute;
+        top: 830px;
+        left: 557px;
+        &_btn{
+            width: 390px;
+            height: 62px;
+            border-radius: 40px;
+            background: #8D81AC;
+            border: none;
+            @include Monserrat(700,21px);
+            color: white;
+            cursor: pointer;
+        }
+        &_title{
+            @include Monserrat(400,14px);
+            color: rgba(132, 142, 151, 1)
+        }
+    }
+}
+.main{
+    &_present-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 858px;
+        height: 192px;
+        margin: 0 auto;
+        margin-top: 131px;
+        &_title{
+            @include Monserrat(700,54px);
+            color: rgba(99, 92, 115, 1);
+        }
+        &_sub-title{
+            text-align: center;
+            @include Lato(400,21px);
+            line-height: 32px;
+            color: rgba(50, 50, 50, 1);
+        }
+        &_img{
+            margin-top: 48px;
+        }
     }
 }
