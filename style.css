@@ -1,0 +1,10 @@
+.header {
+  height: 863px;
+  background: url(/img/img\ 1.png);
+  background-repeat: no-repeat;
+  flex-grow: 1;
+}
+.header_nav {
+  width: 1200px;
+  background: darkgreen;
+}/*# sourceMappingURL=style.css.map */
