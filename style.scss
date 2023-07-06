@@ -137,4 +137,61 @@
             margin-top: 48px;
         }
     }
+    &_features{
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content:end; 
+        height: 711px;
+        width: 100%;
+       background:#F4F4F4;
+       &_wrapper{
+        display: flex;
+        justify-content: space-between;
+        width: 1290px;
+        height: 561.89px;
+        background: gold;
+        &_text{
+            display: flex;
+            flex-direction: column;
+            row-gap: 33px;
+            width: 540px;
+            height: 100%;
+            background: darkgreen;
+            &_item{
+                display: flex;
+                justify-content: space-between;
+                column-gap: 23px;
+                width: 100%;
+                height: 110px;
+                background:salmon;
+                &_text{
+                    height: 109px;
+                    width: 395px;
+                    background: firebrick;
+                    &_text1{
+                        @include Monserrat(400,16px)
+                    }
+                    &_text2{
+                        margin-top: 16px;
+                        @include Monserrat(400,14px);
+                        line-height: 21px;
+                    }
+                }
+            }
+        }
+        &_img-cont{
+            display: flex;
+            flex-direction: column;
+            row-gap:43.89px;
+            width: 675px;
+            height: 561.89px;
+            background: tomato;
+            &_title{
+                @include Monserrat(700,48px);
+                color: rgba(141, 129, 172, 1);
+            }
+        }
+       }
+    }
 }
