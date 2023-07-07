@@ -230,10 +230,31 @@
   padding-top: 108.11px;
 }
 .main_testimonials_block {
+  display: flex;
+  justify-content: space-between;
   width: 1193px;
   height: 387px;
   background: gold;
   margin-top: 74.89px;
+}
+.main_testimonials_block_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 315px;
+  background: darkmagenta;
+}
+.main_testimonials_block_item_img {
+  width: 165px;
+  height: 43px;
+}
+.main_testimonials_block_item_text {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 24px;
 }
 .main_testimonials_sub-title {
   width: 887px;

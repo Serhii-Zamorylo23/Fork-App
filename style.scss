@@ -208,10 +208,29 @@
             padding-top: 108.11px;
         }
         &_block{
+            display: flex;
+            justify-content: space-between;
             width: 1193px;
             height: 387px;
             background: gold;
             margin-top: 74.89px;
+            &_item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 315px;
+                background: darkmagenta;
+                &_img{
+                    width: 165px;
+                    height: 43px;
+                }
+                &_text{
+                    text-align: center;
+                    @include Lato(700,16px);
+                    font-style: italic;
+                    line-height: 24px;
+                }
+            }
         }
         &_sub-title{
             width: 887px;
