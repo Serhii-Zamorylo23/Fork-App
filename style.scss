@@ -166,7 +166,6 @@
                 height: 110px;
                 background:salmon;
                 &_text{
-                    height: 109px;
                     width: 395px;
                     background: firebrick;
                     &_text1{
@@ -194,4 +193,104 @@
         }
        }
     }
+    &_testimonials{
+        background: url(/img/testmonials-bg\ 1.png);
+        height: 769px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-repeat: no-repeat;
+        flex-grow: 1;
+        background-size: cover;
+        &_text{
+            @include Monserrat(700,48px);
+            color: white;
+            padding-top: 108.11px;
+        }
+        &_block{
+            width: 1193px;
+            height: 387px;
+            background: gold;
+            margin-top: 74.89px;
+        }
+        &_sub-title{
+            width: 887px;
+            text-align: center;
+            @include Lato(400,14px);
+            color: #A291A5;
+            line-height: 21px;
+            padding-top: 114.5px;
+        }
+    }
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    height: 854px;
+    background: url(/img/Layer\ 2\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    &_text{
+        @include Monserrat(700,48px);
+        color: #fff;
+    }
+    &_wrapper{
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        column-gap: 15px;
+        margin-top: 61px;
+        width: 1114px;
+        height: 560px;
+
+        &_card{
+            display: flex;
+            flex-direction: column;
+            width: 257px;
+            height: 457px;
+            background: #ffffff10;
+            align-items: center;
+            &_header{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 257px;
+                height: 97px;
+                background: #ffffff05;
+                @include Monserrat(400,24px);
+                color: white;
+            }
+            &_price-plan{
+                @include Monserrat(400,60px);
+                color: white;
+            }
+            &_month{
+                @include Monserrat(400,14px);
+                color: #fff;
+                margin-top: 20px;
+            }
+            &_personal{
+                @include Monserrat(400,16px);
+                margin-top: 79px;
+                color: #fff;
+                text-align: center;
+            }
+            &_btn{
+                width: 160px;
+                height: 42px;
+                margin-top: 62px;
+                &_svg{
+                    width: 160px;
+                    height: 42px;
+                }
+            }
+        }
+    }
+}
+.repeat{
+    text-align: center;
+    width: 70%;
 }

@@ -183,7 +183,6 @@
   background: salmon;
 }
 .main_features_wrapper_text_item_text {
-  height: 109px;
   width: 395px;
   background: firebrick;
 }
@@ -212,4 +211,120 @@
   font-size: 48px;
   font-weight: 700;
   color: rgb(141, 129, 172);
+}
+.main_testimonials {
+  background: url(/img/testmonials-bg\ 1.png);
+  height: 769px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  flex-grow: 1;
+  background-size: cover;
+}
+.main_testimonials_text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  padding-top: 108.11px;
+}
+.main_testimonials_block {
+  width: 1193px;
+  height: 387px;
+  background: gold;
+  margin-top: 74.89px;
+}
+.main_testimonials_sub-title {
+  width: 887px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #A291A5;
+  line-height: 21px;
+  padding-top: 114.5px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: 854px;
+  background: url(/img/Layer\ 2\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+.footer_text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+}
+.footer_wrapper {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  margin-top: 61px;
+  width: 1114px;
+  height: 560px;
+}
+.footer_wrapper_card {
+  display: flex;
+  flex-direction: column;
+  width: 257px;
+  height: 457px;
+  background: rgba(255, 255, 255, 0.062745098);
+  align-items: center;
+}
+.footer_wrapper_card_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 257px;
+  height: 97px;
+  background: rgba(255, 255, 255, 0.0196078431);
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+}
+.footer_wrapper_card_price-plan {
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  color: white;
+}
+.footer_wrapper_card_month {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 20px;
+}
+.footer_wrapper_card_personal {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 79px;
+  color: #fff;
+  text-align: center;
+}
+.footer_wrapper_card_btn {
+  width: 160px;
+  height: 42px;
+  margin-top: 62px;
+}
+.footer_wrapper_card_btn_svg {
+  width: 160px;
+  height: 42px;
+}
+
+.repeat {
+  text-align: center;
+  width: 70%;
 }/*# sourceMappingURL=style.css.map */
