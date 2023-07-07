@@ -1,0 +1,32 @@
+@media screen and (max-width: 320px){
+    .header{
+        &_nav{
+            width: 320px;
+            height: 118px;
+            &_logo{
+                &_title{
+                    display: none;
+                }
+            }
+            &_linkAndBtn{
+                display: flex;
+                width: 196px;
+                height: 37px;
+                column-gap: 51px;
+                &_link-cont{
+                    display: none;
+                }
+                &_btn{
+                    width: 119px;
+                }
+            }
+        }
+    }
+}
+.list{
+    display: none;
+    list-style: none;
+}
+.burger:focus+.list{
+    display: flex;
+}

@@ -1,1 +1,30 @@
-/*# sourceMappingURL=media.css.map */
+@media screen and (max-width: 320px) {
+  .header_nav {
+    width: 320px;
+    height: 118px;
+  }
+  .header_nav_logo_title {
+    display: none;
+  }
+  .header_nav_linkAndBtn {
+    display: flex;
+    width: 196px;
+    height: 37px;
+    -moz-column-gap: 51px;
+         column-gap: 51px;
+  }
+  .header_nav_linkAndBtn_link-cont {
+    display: none;
+  }
+  .header_nav_linkAndBtn_btn {
+    width: 119px;
+  }
+}
+.list {
+  display: none;
+  list-style: none;
+}
+
+.burger:focus + .list {
+  display: flex;
+}/*# sourceMappingURL=media.css.map */

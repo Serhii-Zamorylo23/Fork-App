@@ -107,6 +107,9 @@
             @include Monserrat(700,21px);
             color: white;
             cursor: pointer;
+            &:hover{
+                background: #fff;
+            }
         }
         &_title{
             @include Monserrat(400,14px);
@@ -214,12 +217,15 @@
             height: 387px;
             background: gold;
             margin-top: 74.89px;
+            flex-wrap: wrap;
             &_item{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                width: 315px;
+                width: 325px;
+                height: 142px;
                 background: darkmagenta;
+                row-gap: 10px;
                 &_img{
                     width: 165px;
                     height: 43px;
@@ -263,7 +269,6 @@
         margin-top: 61px;
         width: 1114px;
         height: 560px;
-
         &_card{
             display: flex;
             flex-direction: column;
@@ -271,6 +276,10 @@
             height: 457px;
             background: #ffffff10;
             align-items: center;
+            &:hover{
+                transform: scale(2);
+                background: #46304883;
+            }
             &_header{
                 display: flex;
                 flex-direction: column;
@@ -281,6 +290,9 @@
                 background: #ffffff05;
                 @include Monserrat(400,24px);
                 color: white;
+                &:hover{
+                background: #00000010;
+            }
             }
             &_price-plan{
                 @include Monserrat(400,60px);
@@ -301,10 +313,11 @@
                 width: 160px;
                 height: 42px;
                 margin-top: 62px;
-                &_svg{
-                    width: 160px;
-                    height: 42px;
-                }
+                background: #ffffff15;
+                border: none;
+                border-radius: 20px;
+                @include Monserrat(400,15px);
+                color: white;
             }
         }
     }
@@ -312,4 +325,12 @@
 .repeat{
     text-align: center;
     width: 70%;
+}
+.logo7{
+    width: 64px;
+    height: 64px;
+}
+hr{
+    border: 2px solid rgba(100, 87, 102, 1);
+    width: 780px;
 }
