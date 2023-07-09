@@ -83,31 +83,100 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 947px;
+    width: 317px;
+    height: 1391px;
   }
   .main_features_wrapper_text {
-    display: flex;
-    height: 947px;
     width: 277px;
-    align-items: end;
+    height: 962px;
   }
   .main_features_wrapper_text_item {
-    display: block;
+    display: flex;
     flex-direction: column;
-    width: 270px;
+    align-items: center;
+    width: 277px;
+    height: 216px;
+    row-gap: 23px;
+  }
+  .main_features_wrapper_text_item_text {
+    width: 277px;
+    height: 216px;
+    text-align: center;
   }
   .main_features_wrapper_text_item_text_text1 {
-    width: 270px;
-    height: 111px;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 400;
+    color: #323232;
+  }
+  .main_features_wrapper_text_item_text_text2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #848E97;
   }
   .main_features_wrapper_img-cont {
     margin-top: 0;
+    width: 317px;
+    height: 383px;
+  }
+  .main_features_wrapper_img-cont_img {
+    display: none;
   }
   .main_features_wrapper_img-cont_title {
     display: none;
+  }
+  .main_testimonials {
+    background: url(/img/testmonials-bg\ 2\ \(1\).png);
+    height: 1610px;
+  }
+  .main_testimonials_text {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .main_testimonials_block {
+    height: 1538px;
+    width: 320px;
+  }
+  .main_testimonials_sub-title {
+    width: 251px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .footer {
+    height: 2113px;
+  }
+  .footer_text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .footer_wrapper {
+    display: flex;
+    row-gap: 18px;
+    flex-direction: column;
+    align-items: center;
+    width: 299px;
+    height: 1988px;
+  }
+  .footer_wrapper_card_header_text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .footer_wrapper_card_price-plan {
+    font-family: "Montserrat", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+  }
+  .footer_wrapper_card_personal {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
   }
   .list {
     display: none;
@@ -140,5 +209,8 @@
   }
   .burger:focus + .list {
     display: flex;
+  }
+  hr {
+    width: 245px;
   }
 }/*# sourceMappingURL=media.css.map */

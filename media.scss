@@ -82,30 +82,87 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                width: 947px;
+                width: 317px;
+                height: 1391px;
                 &_text{
-                    display: flex;
-                    height: 947px;
                     width: 277px;
-                    align-items:end;
+                    height: 962px;
                     &_item{
-                        display: block;
+                        display: flex;
                         flex-direction: column;
-                        width: 270px;
+                        align-items: center;
+                        width: 277px;
+                        height: 216px;
+                        row-gap: 23px;
                         &_text{
+                            width: 277px;
+                            height: 216px;
+                            text-align: center;
                             &_text1{
-                                width: 270px;
-                                height: 111px;
                                 @include Monserrat(400,16px);
+                                color: #323232;
+                            }
+                            &_text2{
+                                @include Lato(400,14px);
+                                color: #848E97;
                             }
                         }
                     }
                 }
                 &_img-cont{
                     margin-top: 0;
+                    width: 317px;
+                    height: 383px;
+                    &_img{
+                        display: none;
+                    }
                     &_title{
                         display: none;
                     }
+                }
+            }
+        }
+        &_testimonials{
+            background: url(/img/testmonials-bg\ 2\ \(1\).png);
+            height: 1610px;
+            &_text{
+                text-align: center;
+                @include Monserrat(700,36px)
+            }
+            &_block{
+                height: 1538px;
+                width: 320px;
+            }
+            &_sub-title{
+                width: 251px;
+                @include Lato(400,14px)
+            }
+        }
+    }
+    .footer{
+        height: 2113px;
+        &_text{
+            @include Monserrat(700,28px);
+            text-align: center;
+        }
+        &_wrapper{
+            display: flex;
+            row-gap: 18px;
+            flex-direction: column;
+            align-items: center;
+            width: 299px;
+            height: 1988px;
+            &_card{
+                &_header{
+                    &_text{
+                        @include Monserrat(400,24px)
+                    }
+                }
+                &_price-plan{
+                    @include Monserrat(400,60px)
+                }
+                &_personal{
+                    @include Monserrat(400,16px)
                 }
             }
         }
@@ -139,5 +196,8 @@
     }
     .burger:focus+.list{
         display: flex;
+    }
+    hr{
+        width: 245px;
     }
 }
