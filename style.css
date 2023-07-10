@@ -215,6 +215,9 @@
   font-weight: 700;
   color: rgb(141, 129, 172);
 }
+.main_features_wrapper_img-cont_img2 {
+  display: none;
+}
 .main_testimonials {
   background: url(/img/testmonials-bg\ 1.png);
   height: 769px;
@@ -374,4 +377,12 @@
 hr {
   border: 2px solid rgb(100, 87, 102);
   width: 780px;
+}
+
+.burger {
+  display: none;
+}
+
+.list {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
