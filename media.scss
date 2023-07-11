@@ -53,7 +53,7 @@
             height: 72.5px;
             position: absolute;
             top: 838px;
-            left: 18px;
+            left: 187px;
             &_btn{
                 width: 290px;
                 height: 45px;
@@ -119,6 +119,9 @@
                     &_title{
                         display: none;
                     }
+                    &_img2{
+                        display: block;
+                    }
                 }
             }
         }
@@ -153,6 +156,7 @@
             width: 299px;
             height: 1988px;
             &_card{
+                transition-duration: 0.1s;
                 &_header{
                     &_text{
                         @include Monserrat(400,24px)
@@ -163,6 +167,12 @@
                 }
                 &_personal{
                     @include Monserrat(400,16px)
+                }
+                :hover{
+                    transition-duration: 0.3s;
+                    width: 299px;
+                    height: 560px;
+                    background: #46304883;
                 }
             }
         }
@@ -202,35 +212,34 @@
         width: 245px;
     }
 }
-@media screen and (min-width:427px)  and (max-width:768px){
+@media screen and (min-width:426px)  and (max-width:768px){
     .header{
         background: url(/img/img\ 2.png);
         &_nav{
-            width: 728px;
+            width: 97%;
             height: 82px;
             &_linkAndBtn{
                 display: flex;
                 justify-content: flex-end;
                 flex-wrap: wrap;
-                width: 622px;
-                height: 80px;
+                height: 40px;
                 row-gap: 0;
-                &_link-cont{
-                    display: flex;
-                    width: 517px;
-                    order: 2;
-                    margin:  0 auto;
-                }
+                order: 2;
                 &_btn{
                     justify-content: center;
                     align-items: center;
                     display: flex;
-                    order: 1;
                 }
             }
             &_logo{
                 width: 160px;
                 height: 41px;
+            }
+            &_link-cont{
+                display: flex;
+                width: 100%;
+                order: 1;
+                margin:  0 auto;
             }
         }
         &_btn-container{
@@ -239,11 +248,73 @@
     }
     .main{
         &_present-container{
+            width: 90%;
             &_title{
+                text-transform: uppercase;
                 @include Monserrat(700,42px)
             }
             &_sub-title{
                 @include Lato(400,21px)
+            }
+        }
+        &_features{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 1259px;
+            align-items: end;
+            &_wrapper{
+                display: flex;
+                width: 90%;
+                height: 1104px;
+                flex-direction: column;
+                align-items: center;
+                &_img-cont{
+                    &_title{
+                        display: none;
+                    }
+                }
+            }
+        }
+        &_testimonials{
+            width: 100%;
+            height: 885px;
+            &_block{
+                display: flex;
+                flex-direction: column;
+                height: 537px;
+                width: 98%;
+                align-items: center;
+            }
+            &_text{
+                @include Monserrat(700,42px);
+            }
+            &_sub-title{
+                width: 90%;
+            }
+        }
+    }
+    hr{
+        width: 80%;
+    }
+    .footer{
+        width: 100%;
+        height: 1311px;
+        &_text{
+            @include Monserrat(700,42px)
+        }
+        &_wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            height: 1047px;
+            width: 100%;
+            &_card{
+                width: 257px;
+                height: 457px;
+                :hover{
+                    width: 299px;
+                    height: 560px;
+                }
             }
         }
     }

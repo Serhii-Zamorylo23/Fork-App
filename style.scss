@@ -8,6 +8,16 @@
     font-size: $size;
     font-weight: $weidth;
 }
+@mixin Lato($weight,$size){
+    font-family: 'Lato', sans-serif;
+    font-weight: $weight;
+    font-size: $size;
+}
+@mixin Monserrat($weidth,$size){
+    font-family: 'Montserrat', sans-serif;
+    font-size: $size;
+    font-weight: $weidth;
+}
 .header{
     height: 863px;
     background: url(/img/img\ 1.png);
@@ -21,7 +31,6 @@
         display: flex;
         margin:  0 auto;
         align-items: center;
-        justify-content: space-between;
         &_logo{
             display: flex;
             align-items: center;
@@ -41,21 +50,11 @@
             display: flex;
             align-items: center;
             column-gap: 48px;
-            width: 710px;
             height: 38px;
             background: rgb(49, 22, 200);
-            &_link-cont{
-                display: flex;
-                justify-content: space-between;
-                width: 527px;
-                height: 20px;
-                background: red;
-                &_link{
-                    text-decoration: none;
-                    @include Monserrat(700,16px);
-                    color: rgba(141, 129, 172, 1);
-                }
-            }
+            order: 2;
+            margin-left: 38px;
+
             &_btn{
                 width: 145px;
                 height: 37px;
@@ -67,6 +66,20 @@
                 color: white;
             }
         }
+         &_link-cont{
+                display: flex;
+                justify-content: space-between;
+                width: 527px;
+                height: 20px;
+                background: red;
+                order: 1;
+                margin-left: 312px;
+                &_link{
+                    text-decoration: none;
+                    @include Monserrat(700,16px);
+                    color: rgba(141, 129, 172, 1);
+                }
+            }
     }
     &_title{
     @include Monserrat(700,82px);
@@ -144,11 +157,10 @@
         margin-top: 70px;
         display: flex;
         align-items: center;
-        justify-content:end; 
+        justify-content:center; 
         height: 711px;
         width: 100%;
        background:#F4F4F4;
-       justify-content: center;
        &_wrapper{
         display: flex;
         justify-content: space-between;
@@ -188,7 +200,7 @@
             flex-direction: column;
             row-gap:43.89px;
             width: 675px;
-            height: 561.89px;
+
             background: tomato;
             &_title{
                 @include Monserrat(700,48px);
@@ -294,10 +306,9 @@
                 align-items: center;
                 width: 257px;
                 height: 97px;
-                background: #ffffff05;
+                background: none;
                 @include Monserrat(400,24px);
                 color: white;
-            }
             }
             &_price-plan{
                 @include Monserrat(400,60px);

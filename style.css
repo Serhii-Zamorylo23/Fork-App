@@ -12,7 +12,6 @@
   display: flex;
   margin: 0 auto;
   align-items: center;
-  justify-content: space-between;
 }
 .header_nav_logo {
   display: flex;
@@ -37,23 +36,10 @@
   align-items: center;
   -moz-column-gap: 48px;
        column-gap: 48px;
-  width: 710px;
   height: 38px;
   background: rgb(49, 22, 200);
-}
-.header_nav_linkAndBtn_link-cont {
-  display: flex;
-  justify-content: space-between;
-  width: 527px;
-  height: 20px;
-  background: red;
-}
-.header_nav_linkAndBtn_link-cont_link {
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: rgb(141, 129, 172);
+  order: 2;
+  margin-left: 38px;
 }
 .header_nav_linkAndBtn_btn {
   width: 145px;
@@ -66,6 +52,22 @@
   font-size: 16px;
   font-weight: 700;
   color: white;
+}
+.header_nav_link-cont {
+  display: flex;
+  justify-content: space-between;
+  width: 527px;
+  height: 20px;
+  background: red;
+  order: 1;
+  margin-left: 312px;
+}
+.header_nav_link-cont_link {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(141, 129, 172);
 }
 .header_title {
   font-family: "Montserrat", sans-serif;
@@ -156,11 +158,10 @@
   margin-top: 70px;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
   height: 711px;
   width: 100%;
   background: #F4F4F4;
-  justify-content: center;
 }
 .main_features_wrapper {
   display: flex;
@@ -207,7 +208,6 @@
   flex-direction: column;
   row-gap: 43.89px;
   width: 675px;
-  height: 561.89px;
   background: tomato;
 }
 .main_features_wrapper_img-cont_title {
@@ -325,14 +325,11 @@
   align-items: center;
   width: 257px;
   height: 97px;
-  background: rgba(255, 255, 255, 0.0196078431);
+  background: none;
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-weight: 400;
   color: white;
-}
-.footer_wrapper_card_header:hover {
-  background: rgba(0, 0, 0, 0.062745098);
 }
 .footer_wrapper_card_price-plan {
   font-family: "Montserrat", sans-serif;

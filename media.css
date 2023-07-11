@@ -49,7 +49,7 @@
     height: 72.5px;
     position: absolute;
     top: 838px;
-    left: 18px;
+    left: 187px;
   }
   .header_btn-container_btn {
     width: 290px;
@@ -126,6 +126,9 @@
   .main_features_wrapper_img-cont_title {
     display: none;
   }
+  .main_features_wrapper_img-cont_img2 {
+    display: block;
+  }
   .main_testimonials {
     background: url(/img/testmonials-bg\ 2\ \(1\).png);
     height: 1610px;
@@ -163,6 +166,9 @@
     width: 299px;
     height: 1988px;
   }
+  .footer_wrapper_card {
+    transition-duration: 0.1s;
+  }
   .footer_wrapper_card_header_text {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
@@ -177,6 +183,12 @@
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 400;
+  }
+  .footer_wrapper_card :hover {
+    transition-duration: 0.3s;
+    width: 299px;
+    height: 560px;
+    background: rgba(70, 48, 72, 0.5137254902);
   }
   .list {
     display: none;
@@ -215,42 +227,45 @@
     width: 245px;
   }
 }
-@media screen and (min-width: 427px) and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 768px) {
   .header {
     background: url(/img/img\ 2.png);
   }
   .header_nav {
-    width: 728px;
+    width: 97%;
     height: 82px;
   }
   .header_nav_linkAndBtn {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    width: 622px;
-    height: 80px;
+    height: 40px;
     row-gap: 0;
-  }
-  .header_nav_linkAndBtn_link-cont {
-    display: flex;
-    width: 517px;
     order: 2;
-    margin: 0 auto;
   }
   .header_nav_linkAndBtn_btn {
     justify-content: center;
     align-items: center;
     display: flex;
-    order: 1;
   }
   .header_nav_logo {
     width: 160px;
     height: 41px;
   }
+  .header_nav_link-cont {
+    display: flex;
+    width: 100%;
+    order: 1;
+    margin: 0 auto;
+  }
   .header_btn-container {
     left: 195px;
   }
+  .main_present-container {
+    width: 90%;
+  }
   .main_present-container_title {
+    text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     font-size: 42px;
     font-weight: 700;
@@ -259,5 +274,67 @@
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 21px;
+  }
+  .main_features {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1259px;
+    align-items: end;
+  }
+  .main_features_wrapper {
+    display: flex;
+    width: 90%;
+    height: 1104px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main_features_wrapper_img-cont_title {
+    display: none;
+  }
+  .main_testimonials {
+    width: 100%;
+    height: 885px;
+  }
+  .main_testimonials_block {
+    display: flex;
+    flex-direction: column;
+    height: 537px;
+    width: 98%;
+    align-items: center;
+  }
+  .main_testimonials_text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+  }
+  .main_testimonials_sub-title {
+    width: 90%;
+  }
+  hr {
+    width: 80%;
+  }
+  .footer {
+    width: 100%;
+    height: 1311px;
+  }
+  .footer_text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+  }
+  .footer_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    height: 1047px;
+    width: 100%;
+  }
+  .footer_wrapper_card {
+    width: 257px;
+    height: 457px;
+  }
+  .footer_wrapper_card :hover {
+    width: 299px;
+    height: 560px;
   }
 }/*# sourceMappingURL=media.css.map */
