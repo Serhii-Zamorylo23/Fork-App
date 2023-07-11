@@ -148,6 +148,7 @@
         height: 711px;
         width: 100%;
        background:#F4F4F4;
+       justify-content: center;
        &_wrapper{
         display: flex;
         justify-content: space-between;
@@ -279,8 +280,11 @@
             height: 457px;
             background: #ffffff10;
             align-items: center;
+            transition-duration: 0.1s;
             &:hover{
-                transform: scale(2);
+                transition-duration: 0.3s;
+                width: 299px;
+                height: 560px;
                 background: #46304883;
             }
             &_header{
@@ -293,8 +297,6 @@
                 background: #ffffff05;
                 @include Monserrat(400,24px);
                 color: white;
-                &:hover{
-                background: #00000010;
             }
             }
             &_price-plan{

@@ -160,6 +160,7 @@
   height: 711px;
   width: 100%;
   background: #F4F4F4;
+  justify-content: center;
 }
 .main_features_wrapper {
   display: flex;
@@ -309,9 +310,12 @@
   height: 457px;
   background: rgba(255, 255, 255, 0.062745098);
   align-items: center;
+  transition-duration: 0.1s;
 }
 .footer_wrapper_card:hover {
-  transform: scale(2);
+  transition-duration: 0.3s;
+  width: 299px;
+  height: 560px;
   background: rgba(70, 48, 72, 0.5137254902);
 }
 .footer_wrapper_card_header {

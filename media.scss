@@ -8,7 +8,7 @@
     font-size: $size;
     font-weight: $weidth;
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 426px){
     .header{
         background: url(/img/img\ 3.png);
         &_nav{
@@ -191,6 +191,7 @@
         border-left: 8mm solid #8D81AC;
     }
     .burger{
+        display: block;
         background: none;
         border: none;
     }
@@ -199,5 +200,51 @@
     }
     hr{
         width: 245px;
+    }
+}
+@media screen and (min-width:427px)  and (max-width:768px){
+    .header{
+        background: url(/img/img\ 2.png);
+        &_nav{
+            width: 728px;
+            height: 82px;
+            &_linkAndBtn{
+                display: flex;
+                justify-content: flex-end;
+                flex-wrap: wrap;
+                width: 622px;
+                height: 80px;
+                row-gap: 0;
+                &_link-cont{
+                    display: flex;
+                    width: 517px;
+                    order: 2;
+                    margin:  0 auto;
+                }
+                &_btn{
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    order: 1;
+                }
+            }
+            &_logo{
+                width: 160px;
+                height: 41px;
+            }
+        }
+        &_btn-container{
+            left: 195px;
+        }
+    }
+    .main{
+        &_present-container{
+            &_title{
+                @include Monserrat(700,42px)
+            }
+            &_sub-title{
+                @include Lato(400,21px)
+            }
+        }
     }
 }
