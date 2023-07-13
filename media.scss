@@ -62,6 +62,9 @@
         }
     }
     .main{
+        &_btn-section{
+            width:290px;
+        }
         &_present-container{
             width: 273px;
             height: 263px;
@@ -245,11 +248,11 @@
                 margin:  0 auto;
             }
         }
-        &_btn-container{
-            left: 195px;
-        }
     }
     .main{
+        &_btn-section{
+            width:390px;
+        }
         &_present-container{
             width: 90%;
             &_title{

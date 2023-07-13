@@ -8,7 +8,6 @@
 .header_nav {
   width: 1200px;
   height: 100px;
-  background: darkgreen;
   display: flex;
   margin: 0 auto;
   align-items: center;
@@ -37,7 +36,6 @@
   -moz-column-gap: 48px;
        column-gap: 48px;
   height: 38px;
-  background: rgb(49, 22, 200);
   order: 2;
   margin-left: 38px;
 }
@@ -58,7 +56,6 @@
   justify-content: space-between;
   width: 527px;
   height: 20px;
-  background: red;
   order: 1;
   margin-left: 312px;
 }
@@ -128,6 +125,32 @@
   color: rgb(132, 142, 151);
 }
 
+.main_btn-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 390px;
+  height: 62px;
+}
+.main_btn-section_btn {
+  transform: translateY(-50%);
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+  border: none;
+  background: #8D81AC;
+  font-family: "Montserrat", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #fff;
+}
+.main_btn-section_title {
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #848E97;
+}
 .main_present-container {
   display: flex;
   flex-direction: column;
@@ -168,7 +191,6 @@
   justify-content: space-between;
   width: 1290px;
   height: 561.89px;
-  background: gold;
 }
 .main_features_wrapper_text {
   display: flex;
@@ -176,7 +198,6 @@
   row-gap: 33px;
   width: 540px;
   height: 100%;
-  background: darkgreen;
 }
 .main_features_wrapper_text_item {
   display: flex;
@@ -185,11 +206,9 @@
        column-gap: 23px;
   width: 100%;
   height: 110px;
-  background: salmon;
 }
 .main_features_wrapper_text_item_text {
   width: 395px;
-  background: firebrick;
 }
 .main_features_wrapper_text_item_text_text1 {
   font-family: "Montserrat", sans-serif;
@@ -208,7 +227,6 @@
   flex-direction: column;
   row-gap: 43.89px;
   width: 675px;
-  background: tomato;
 }
 .main_features_wrapper_img-cont_title {
   font-family: "Montserrat", sans-serif;
@@ -241,7 +259,6 @@
   justify-content: space-between;
   width: 1193px;
   height: 387px;
-  background: gold;
   margin-top: 74.89px;
   flex-wrap: wrap;
 }
@@ -251,7 +268,6 @@
   align-items: center;
   width: 325px;
   height: 142px;
-  background: darkmagenta;
   row-gap: 10px;
 }
 .main_testimonials_block_item_img {
@@ -263,6 +279,7 @@
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 16px;
+  color: #fff;
   font-style: italic;
   line-height: 24px;
 }
