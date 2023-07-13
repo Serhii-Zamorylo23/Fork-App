@@ -25,12 +25,12 @@
                 width: 196px;
                 height: 37px;
                 column-gap: 51px;
-                &_link-cont{
-                    display: none;
-                }
                 &_btn{
                     width: 119px;
                 }
+            }
+            &_link-cont{
+                display: none;
             }
         }
         &_title{
@@ -216,6 +216,9 @@
     .header{
         background: url(/img/img\ 2.png);
         &_nav{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
             width: 97%;
             height: 82px;
             &_linkAndBtn{
@@ -238,7 +241,7 @@
             &_link-cont{
                 display: flex;
                 width: 100%;
-                order: 1;
+                order: 3;
                 margin:  0 auto;
             }
         }
