@@ -135,6 +135,9 @@
   .main_testimonials {
     background: url(/img/testmonials-bg\ 2\ \(1\).png);
     height: 1610px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
   }
   .main_testimonials_text {
     text-align: center;
@@ -143,8 +146,11 @@
     font-weight: 700;
   }
   .main_testimonials_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 1538px;
-    width: 320px;
+    width: 100%;
   }
   .main_testimonials_sub-title {
     width: 251px;
